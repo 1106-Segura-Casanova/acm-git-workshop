@@ -42,6 +42,8 @@ Then, run the following commands in the terminal:
     git commit -m "committing newFile.txt"   // saves local snapshot of changes
     git push                                // uploads to remote repo
 
+Note: It might prompt you to login back again.
+
 If you go back to the repository on the GitHub website, you should be able to see your changes!
 
 ---
