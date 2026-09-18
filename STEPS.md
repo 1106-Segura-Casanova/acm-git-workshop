@@ -39,7 +39,7 @@ Let's first create a new file. Right click on the empty space on the left, and c
 Then, run the following commands in the terminal:
 
     git add newFile.txt                     // stages your changes
-    git commit -m "commiting newFile.txt"   // saves local snapshot of changes
+    git commit -m "committing newFile.txt"   // saves local snapshot of changes
     git push                                // uploads to remote repo
 
 If you go back to the repository on the GitHub website, you should be able to see your changes!
@@ -82,7 +82,7 @@ Return back to your branch:
 
     git checkout my-branch
 
-Now, run the following command to merge your prior commit in  `my-branch` into `main`:
+Now, run the following command to merge `main` into `my-branch`:
 
     git merge main
 
