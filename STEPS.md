@@ -8,7 +8,7 @@ Fell behind during the live demo? No worries! Follow the steps here at your own 
 1. If you don't already have one, create a **[GitHub](https://github.com)** account. Then, make sure you're signed in.
 2. Open this [link](https://github.com/nlacan/acm-git-workshop/tree/main) and click **Fork** at the top right. GitHub will redirect you to your own copy of the repo at `github.com/your-username/acm-git-workshop`
 3. Open Visual Studio Code on your lab computer, click **Sign In** at the top right, and login with your GitHub account
-4. Make sure you have VS Code's integrated terminal open. It should say `PS C:\Users\your-user ` at the bottom! If you don't see a terminal, you can open one using `` Ctrl + Shift + ` ``
+4. Make sure you have VS Code's integrated terminal open. It should say `PS C:\Users\your-user` at the bottom! If you don't see a terminal, you can open one using `` Ctrl + Shift + ` ``
 
 If you decided to bring your own machine, please use Visual Studio Code's terminal! It keeps things consistent and will allow helpers to troubleshoot faster. However, we do recommend using the lab computers as the workshop material is made based on those rather than personal machines.
 
@@ -48,16 +48,16 @@ If you go back to the repository on the GitHub website, you should be able to se
 ---
 
 ### Step 3: Create and Work on a Feature Branch
-**What is branching?** Branching creates a separate, independent copy of your code where you can make changes without affecting the main version. This is how teams work on multiple features at once without stepping on each other's work.
+**What is branching?** Branching creates a separate, independent copy of your code where you can make changes without affecting the `main` branch. This is how teams work on multiple features at once without stepping on each other's work.
 
-It is best practice to create your own branch to work on your own code independently. Any changes you make to your new branch will not affect `main`. Run the following commands in the terminal to branch off `main` and to see what branch you are at:
+It is best practice to create your own "feature branch" every time you start a new feature. Run the following commands in the terminal to branch off `main` and to see what branch you are at:
 
     git checkout -b my-branch     // creates a new branch called my-branch
-    git branch                    // current local branches
+    git branch                    // shows current local branches
 
 When you run `git branch`, you should see an asterisk (*) next to `my-branch`. The asterisk indicates your current branch!
 
-Now, let's edit the file called `editme.txt`. Answer the question in the file, and commit your changes using the following commands. **Important: do *not* push!** Since we have not pushed, your changes stay on your local machine.
+Now, let's edit the file called `editme.txt`. Answer the question in the file, and commit your changes using the following commands. Remember your answer! **Important: do *not* push!** Since we have not pushed, your changes stay on your local machine.
 
     git add editme.txt
     git commit -m "modify editme.txt"
@@ -65,7 +65,7 @@ Now, let's edit the file called `editme.txt`. Answer the question in the file, a
 ---
 
 ### Step 4: Simulate a Merge Conflict
-Usually, `main` might have new commits from a teammate who merged their new code while you were working on your branch. This can lead to something called a **merge conflict**.
+Usually, the `main` branch might have new commits from a teammate who merged their new code while you were working on your branch. This can lead to something called a **merge conflict**.
 
 A **merge conflict** occurs when a teammate changed the same exact line of code you did. Git does not know which one to keep, so you need to resolve it before pushing!
 
@@ -129,7 +129,7 @@ To open a pull request:
 3. Change the base repository to your forked repository. It should say `base repository: your-username/acm-git-workshop`.
 4. It should redirect you to a **Comparing changes** page. In that page, change `compare: main` to `compare: my-branch`.
 5. Click **Create pull request**
-6. Optionally, add a title and description. This is best practice! However, for now you can just press **Create pull request**
+6. Optionally, add a title and description. It is good to include them! However, for now you can just press **Create pull request**
 7. It should redirect you to the pull request page itself. Typically, you should *not* be accepting your own pull request. Someone else will take a look! However, for learning purposes, add a comment to simulate someone reviewing your code, then press **Merge pull request** and confirm the merge.
 
 If you go back to your forked repository's `main` branch, you should see your merged code in `editme.txt`!
