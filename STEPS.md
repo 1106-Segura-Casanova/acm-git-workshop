@@ -16,6 +16,8 @@ If you decided to bring your own machine, please use Visual Studio Code's termin
 ## Demo Start!
 
 ### Step 1: Clone the Forked Repository
+**What is cloning?** Cloning downloads a copy of a remote repository (from GitHub) onto your own machine, so you can work on the code locally.
+
 On your forked repository on the GitHub website, press the green Code button and copy the URL. Make sure you are copying the forked repository's URL, not the original repository's! The URL should have your GitHub username. 
 
 Then, run the following commands in the terminal:
@@ -27,15 +29,17 @@ Then, run the following commands in the terminal:
 ---
 
 ### Step 2: Commit a New File (No Merge Conflicts)
-You will now make your first commit! Note that right now, we are on the `main` branch.
+**What is a commit?** A commit is a snapshot of your current changes to your local project history, along with a message describing what changed. Think of it as a save point you can always come back to.
+
+You will now make your first commit! Note that right now, we are on the `main` branch. `main` is where the shared team code lives.
 
 Let's first create a new file. Right click on the empty space on the left, and create a new file called `newFile.txt`. Leave it empty or type anything in it! Make sure to save your changes with `Ctrl + S`.
 
 Then, run the following commands in the terminal:
 
-    git add newFile.txt                     // stages your changes
+    git add newFile.txt                     // stages your changes, kind of like a pre-commit
     git commit -m "add newFile.txt"         // saves local snapshot of changes
-    git push                                // uploads to remote repo
+    git push                                // uploads your commit to remote repo
 
 Note: It might prompt you to login back again. If it does, choose the sign in with browser option.
 
@@ -43,7 +47,9 @@ If you go back to the repository on the GitHub website, you should be able to se
 
 ---
 
-### Step 3: Create and Work on a Branch
+### Step 3: Create and Work on a Feature Branch
+**What is branching?** Branching creates a separate, independent copy of your code where you can make changes without affecting the main version. This is how teams work on multiple features at once without stepping on each other's work.
+
 It is best practice to create your own branch to work on your own code independently. Any changes you make to your new branch will not affect `main`. Run the following commands in the terminal to branch off `main` and to see what branch you are at:
 
     git checkout -b my-branch     // creates a new branch called my-branch
