@@ -4,18 +4,13 @@
 Fell behind during the live demo? No worries! Follow the steps here at your own pace. If you get stuck, raise your hand and a board member will help you!
 
 
-## Before the Workshop
-If you haven't done these yet, do it now:
-1. **Make a [GitHub](https://github.com) account** (if you don't have one already, otherwise you're good!)
-2. **Fork the workshop repository** -> open this [link](https://github.com/nlacan/acm-git-workshop/tree/main) and click on **Fork** at the top right. GitHub will redirect you to your own copy of the repo at `github.com/your-username/acm-git-workshop`
+## Setup
+1. If you don't already have one, create a **[GitHub](https://github.com)** account. Then, make sure you're signed in.
+2. Open this [link](https://github.com/nlacan/acm-git-workshop/tree/main) and click **Fork** at the top right. GitHub will redirect you to your own copy of the repo at `github.com/your-username/acm-git-workshop`
+3. Open Visual Studio Code on your lab computer, click **Sign In** at the top right, and login with your GitHub account
+4. Make sure you have VS Code's integrated terminal open. It should say `PS C:\Users\your-user ` at the bottom! If you don't see a terminal, you can open one using `` Ctrl + Shift + ` ``
 
-
-## Workshop Day Setup
-1. Open Visual Studio Code on your lab computer
-2. At the top right, click **Sign In** and login with your GitHub account
-3. Make sure you have VSCode's integrated terminal open. It should say `PS C:\Users\your-user ` in your terminal at the bottom! If you don't see a terminal, you can open one using `` Ctrl + Shift + ` ``
-
-If you decided to bring your own machine, please use Visual Studio Code's terminal! It keeps things consistent and will allow helpers to troubleshoot faster.
+If you decided to bring your own machine, please use Visual Studio Code's terminal! It keeps things consistent and will allow helpers to troubleshoot faster. However, we do recommend using the lab computers as the workshop material is made based on those rather than personal machines.
 
 
 ## Demo Start!
@@ -106,7 +101,9 @@ Everything between `<<<<<<< HEAD` and `=======` is what's on **your branch**. Ev
 Edit the file by hand to fix it. Delete the `<<<<<<<`, `=======`, and `>>>>>>>` lines, and keep whichever answer you want (or combine both)! Then run:
 
     git add editme.txt
-    git commit -m "resolve merge conflict"
+    git commit -m "resolved merge conflict"
+
+💡 Bonus tip: VS Code also shows clickable buttons right above the conflict markers: Accept Current Change, Accept Incoming Change, or Accept Both Changes. They do this resolution for you automatically. It's good to understand how to resolve conflicts by hand first (like we just did!), but once you're comfortable, these buttons are usually the faster way to do it day-to-day.
 
 ---
 
